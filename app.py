@@ -5,6 +5,7 @@ from lib.artist_repository import ArtistRepository
 # Connect to the database
 connection = DatabaseConnection()
 connection.connect()
+print(connection.DATABASE_NAME)
 
 # Seed with some seed data
 connection.seed("seeds/music_library.sql")
